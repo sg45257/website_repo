@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shreya Gupta</title>
+    <link>/</link>
+    <description>Recent content on Shreya Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python in Bioinformatics</title>
+      <link>/blog/blog-post/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog-post/</guid>
+      <description>This semester, in SDS 348, I delved deeper into the statistical techniques provided by RStudio and Python, and learned how to successfully apply them to large sets of biological data. Previously, I only had minimal RStudio knowledge so getting to learn and explore a new coding language, Python, has been really exciting. I have thoroughly enjoyed learning how to use Python this semester and here are some examples of how I learned how to apply Python in class:</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>Projects Here are some projects I have been working on:
+  Project 1
+  Project 2
+  </description>
+    </item>
+    
+    <item>
+      <title>SDS Project 1</title>
+      <link>/project1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project1/</guid>
+      <description>#I have chosen two datasets, infert and Fertility. Infertility contains data on 100 women who have secondary infertility by exploring variables such as induced and/or spontaneous abortions. The Fertility dataset contains data on women who are struggling to become pregnant by researching variables such as follicle counts and fertility levels. I found one of these datasets on the curated list of datasets and the other from the available packages on R.</description>
+    </item>
+    
+    <item>
+      <title>SDS Project 2</title>
+      <link>/project2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project2/</guid>
+      <description>This dataset analyzes 79 urine samples to see if there is a relationship between certain physical characteristics of the urine and the formation of calcium oxalate crystals. There are seven variables in this dataset, out of which one is binary and the others are numeric. The variables are r, gravity, pH, osmo, cond, urea, and calc representing the presence of calcium oxalate crystals, the specific gravity of the urine, the pH reading of the urine, the osmolarity of the urine, the conductivity of the urine, the urea concentration in millimoles per litre, and the calcium concentration in millimoles per litre, respectively.</description>
+    </item>
+    
+  </channel>
+</rss>

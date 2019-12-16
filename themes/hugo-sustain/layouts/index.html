@@ -1,0 +1,21 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      {{ partial "header" . }}
+      <section id="about">
+        <div class="container">
+        <div class="avatar">
+          <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="It's me!">
+        </div>
+        <h3>I'm <strong>{{ .Site.Params.author }}</strong>, a B.S.A Biology student with a minor in Business Foundations at The University of Texas at Austin, graduating in May 2020. </h3>
+        <h3>I love learning new things, dancing and other creative outlets, and my friends and family.</h3>
+        <h3>Have a look at some of my working <a href="{{ .Site.BaseURL }}projects/"> projects </a>  in which I analyzed fertility and urine data, respectively.</h3>
+        <h3>For more check out my academic &amp; professional <a href="/sdsresume.pdf">resume</a>.</h3>
+        <h3>Contact me by <a href="mailto:{{ .Site.Params.Social.Email }}">email</a>.</h3>
+        {{ partial "social.html" . }}
+        </div>
+      </section>
+    </div>
+    {{ partial "footer" . }}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576403620970.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1707473048",
+    "id" : "9B105C17",
+    "lastKnownWriteTime" : 1576384661,
+    "last_content_update" : 1576384661,
+    "path" : "~/Desktop/website/themes/hugo-sustain/layouts/partials/head.html",
+    "project_path" : "themes/hugo-sustain/layouts/partials/head.html",
+    "properties" : {
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "html"
+}

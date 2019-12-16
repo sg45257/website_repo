@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Shreya Gupta</title>
+    <link>/blog/</link>
+    <description>Recent content in Blogs on Shreya Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python in Bioinformatics</title>
+      <link>/blog/blog-post/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog-post/</guid>
+      <description>This semester, in SDS 348, I delved deeper into the statistical techniques provided by RStudio and Python, and learned how to successfully apply them to large sets of biological data. Previously, I only had minimal RStudio knowledge so getting to learn and explore a new coding language, Python, has been really exciting. I have thoroughly enjoyed learning how to use Python this semester and here are some examples of how I learned how to apply Python in class:</description>
+    </item>
+    
+  </channel>
+</rss>

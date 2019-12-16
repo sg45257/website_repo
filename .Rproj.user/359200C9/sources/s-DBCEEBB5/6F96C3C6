@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576403611285.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6F96C3C6",
+    "lastKnownWriteTime" : 1576384661,
+    "last_content_update" : 1576384661,
+    "path" : "~/Desktop/website/themes/hugo-sustain/layouts/partials/header.html",
+    "project_path" : "themes/hugo-sustain/layouts/partials/header.html",
+    "properties" : {
+        "cursorPosition" : "4,91",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "html"
+}

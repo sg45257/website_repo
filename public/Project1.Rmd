@@ -1,0 +1,95 @@
+---
+title: "SDS Project 1"
+author: "Shreya Gupta"
+date: "10/20/2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(tidyr)
+data(package = .packages(all.available = TRUE))
+data(infert)
+glimpse(infert)
+
+library(readxl)
+library(knitr)
+#install.packages("Stat2Data")
+library(Stat2Data)
+data(Fertility)
+glimpse(Fertility)
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(tibble)
+```
+
+
+```{R}
+#I have chosen two datasets, infert and Fertility. Infertility contains data on 100 women who have secondary infertility by exploring variables such as induced and/or spontaneous abortions. The Fertility dataset contains data on women who are struggling to become pregnant by researching variables such as follicle counts and fertility levels. I found one of these datasets on the curated list of datasets and the other from the available packages on R. These variables interest me as I have always been interested in pursuing a career in either oncology or gynaecology and I take interest in variables that affect fertility and infertility. Age is a variable both datasets have in common and I expect to see women with higher fertility rates above the age of 20 and a steady decline in fertility after a women turns 25.
+```
+
+
+```{R}
+colnames(Fertility)[colnames(Fertility)=="Age"] <- "age"
+glimpse(Fertility)
+joined <- infert%>%left_join(Fertility, by=c("age")) 
+glimpse(joined)
+
+#I initially needed to rename the column name in my Fertility dataset to "age" to be able to join the columns based on a column variable. I then joined the datasets using a left join because I want to keep all the results from one dataset and join the relevant data from my other dataset to be able to holistically look at the relevant data.
+```
+
+```{R}
+glimpse(joined %>% group_by(education) %>% summarize_if(is.numeric, sd, na.rm = T) -> summary1)
+glimpse(joined %>% group_by(education) %>% summarize_if(is.numeric, mean, na.rm = T) -> summary2)
+glimpse(joined %>% filter(E2 > mean(E2, na.rm = TRUE)) -> summary3)
+glimpse(joined %>% arrange(desc(E2)) -> summary4arranged)
+glimpse(joined %>% select(age, E2) -> summary5)
+glimpse(joined %>% group_by(education) %>% summarize_all(n_distinct) -> summary6)
+glimpse(joined %>% summarize_all(n_distinct) -> summary7)
+glimpse(joined %>% group_by(education) %>% summarize_if(is.numeric, max, na.rm = T) -> summary8)
+glimpse(joined %>% mutate(gonadotropinfertilityratio=TotalGn/E2) -> summary9)
+glimpse(joined %>% filter(induced > 0) -> summary10)
+count(summary10)   
+
+#In my first line of code, I found the standard deviation of my variables grouped by my categorical variable, which was the years of education the woman had. I ran this same code, but instead found the mean values of each variable, grouped the same way. My next line of code used the filter function and filtered out the women whose fertility rates were higher than average, and I ran this so I could see the range of ages with higher than average fertility levels who are either infertile or struggling to get pregnant. I then chose to arrange fertility levels in descending order, so I could observe associated variables more easily in order of most fertile to least fertile. I used the select function to pull out only the ages of women and their fertility level, because that was the main variable I expected to see an association between. In my next, line of code, I ran summarize_all to calculate my summary statistics on each variable grouped by education. Then, I did this again, however without grouping it by education, to see how education may affect the summary statistics on the variables. Next, I used the mutate function to create a new variable which divided the total gonadotropin levels by fertility levels, with the expectation of creating a value which showed me the ratio of the two. I expected values close to 1, indicating that higher gonadotropin levels were associated with higher levels of fertility, however, this was not the case. Lastly, I chose to use the filter function to look at the women who had atleast 1 or more induced abortions and see if their fertility levels were lower than others. My results can be found below, and after looking at them, it can be seen that the results and associations I was expecting to see were not found. 
+```
+
+```{R}
+ggplot(data=joined, aes(x=joined$age, y=joined$TotalGn, color=joined$E2)) + geom_point() + ggtitle("Gonadotropin Levels and Fertility as a Function of Age") + xlab("Age") + ylab("Total Gonadotropin Levels") + theme(legend.position = "left")
+```
+
+```{R} 
+ggplot(data=joined, aes(x=education, y=LowAFC)) + geom_bar(aes(y=LowAFC, fill = education), stat = "summary", fun.y= "mean") + scale_y_continuous(name = "Antral Follicle Count", breaks = c(0,25,50)) + geom_errorbar(fun.data='mean_se', stat = "summary", width = 0.2) + ggtitle("Antral Follicle Count per Education Level") + scale_fill_hue(h=c(0,40)) + geom_point(aes(y=MeanAFC), stat = "summary", fun.y= "mean", color = "brown")
+```
+```{R}
+#In my first graph, I used a scatterplot to plot Total Gonadotropin Levels against Age, using fertility as a third variable. Unfortunately, I was expecting to see the gonadotropin levels go down with age as they are necessary for reproduction, as well as seeing fertility levels positively correlated with the gonadotropin levels and negatively correlated with age. The x axis is age, the y axis is total gonadotropin levels and the legend shows the colors and their respective fertility level. In my second graph, I used a bar plot to plot my categorical variable, education along my x axis and my antral follicle count against my y axis. The bars on my graph show the smallest antral follicle count and the third variable, indicated by the red points above the error bars represent the mean antral follicle point.
+```
+
+```{R}
+PCAjoined <- joined %>% dplyr::select(-parity,-education, -FSH, -Oocytes)
+joined_nums <- joined %>% select_if(is.numeric) %>% scale
+rownames(joined_nums) <- joined$Name
+joined_pca <- princomp(na.omit(joined_nums), cor = TRUE, scores = TRUE)
+names(joined_pca)
+summary(joined_pca, loadings = T)
+eigval<-joined_pca$sdev^2 
+varprop=round(eigval/sum(eigval),2)
+ggplot()+geom_bar(aes(y=varprop,x=1:16),stat="identity")+xlab("")+geom_path(aes(y=varprop,x=1:16))+geom_text(aes(x=1:16,y=varprop,label=round(varprop,2)),vjust=1,col="white",size=3)+scale_y_continuous(breaks=seq(0,.6,.2),labels = scales::percent)+scale_x_continuous(breaks=1:10)
+round(cumsum(eigval)/sum(eigval),2)
+eigval
+```
+
+```{R}
+ggplot()+geom_point(aes(joined_pca$scores[,1], joined_pca$scores[,2]))+xlab("PC1")+ylab("PC2")
+joined_pca$loadings[1:15,1:2]%>%as.data.frame%>%rownames_to_column%>%
+  ggplot()+geom_hline(aes(yintercept=0),lty=2)+
+  geom_vline(aes(xintercept=0),lty=2)+ylab("PC2")+xlab("PC1")+
+  geom_segment(aes(x=0,y=0,xend=Comp.1,yend=Comp.2),arrow=arrow(),col="red")+
+  geom_label(aes(x=Comp.1*1.1,y=Comp.2*1.1,label=rowname))
+```
+```{R}
+#The PCA graph and the spacing arrows of the graph shows the correlation between variables and the strength of the correlation. The graph shows us that age and TotalGn indeed do point in the same direction, but unfortunately E2 is in the opposite direction. The PC score plot shows that there is no correlation between PC1 and PC2. Most data seems to be concentrated in the middle where PC1 is between 3 and -3.  

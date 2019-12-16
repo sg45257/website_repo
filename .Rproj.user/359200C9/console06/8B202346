@@ -1,0 +1,707 @@
+]0;~/Desktop/website[?1034hShreyas-MacBook-Pro-2:website shreyagupta$ [KShreyas-MacBook-Pro-2:website shreyagupta$ git[K[K[Kcd[K[Kcd ~/Desktop/website
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$  git init #initialize local git respositor y[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kr
+Initialized empty Git repository in /Users/shreyagupta/Desktop/website/.git/
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git add . 
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m 
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m "first website commit"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"w"e"b"s"i"t"e"[C
+[master (root-commit) 7fff12c] website
+ Committer: Shreya Gupta <shreyagupta@Shreyas-MacBook-Pro-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 115 files changed, 9991 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .Rproj.user/359200C9/console06/8B202346
+ create mode 100644 .Rproj.user/359200C9/console06/8B202346.env
+ create mode 100644 .Rproj.user/359200C9/console06/INDEX001
+ create mode 100644 .Rproj.user/359200C9/sources/prop/8A8F6AF9
+ create mode 100644 .Rproj.user/359200C9/sources/prop/F250A20D
+ create mode 100644 .Rproj.user/359200C9/sources/prop/INDEX
+ create mode 100644 .Rproj.user/359200C9/sources/s-DEAFF4ED/28243DBF
+ create mode 100644 .Rproj.user/359200C9/sources/s-DEAFF4ED/28243DBF-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DEAFF4ED/2C4D7B8A
+ create mode 100644 .Rproj.user/359200C9/sources/s-DEAFF4ED/2C4D7B8A-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DEAFF4ED/C9ED4FA0
+ create mode 100644 .Rproj.user/359200C9/sources/s-DEAFF4ED/C9ED4FA0-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DEAFF4ED/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/2DDC81A4-2015-07-23-r-rmarkdown/1/359200C9DEAFF4ED/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/2DDC81A4-2015-07-23-r-rmarkdown/1/359200C9DEAFF4ED/csetup_chunk/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 config.toml
+ create mode 100644 content/blog/2015-07-23-r-rmarkdown.Rmd
+ create mode 100644 content/blog/2015-07-23-r-rmarkdown.html
+ create mode 100644 content/blog/creating-a-new-theme.md
+ create mode 100644 content/blog/goisforlovers.md
+ create mode 100644 content/blog/hugoisforlovers.md
+ create mode 100644 content/blog/migrate-from-jekyll.md
+ create mode 100644 content/projects.md
+ create mode 100644 data/projects.yml
+ create mode 100644 index.Rmd
+ create mode 100644 public/.DS_Store
+ create mode 100644 public/404.html
+ create mode 100644 public/blog/2015-07-23-r-rmarkdown.Rmd
+ create mode 100644 public/blog/2015-07-23-r-rmarkdown/index.html
+ create mode 100644 public/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ create mode 100644 public/blog/creating-a-new-theme/index.html
+ create mode 100644 public/blog/goisforlovers/index.html
+ create mode 100644 public/blog/hugoisforlovers/index.html
+ create mode 100644 public/blog/index.html
+ create mode 100644 public/blog/index.xml
+ create mode 100644 public/blog/migrate-from-jekyll/index.html
+ create mode 100644 public/categories/development/index.html
+ create mode 100644 public/categories/development/index.xml
+ create mode 100644 public/categories/golang/index.html
+ create mode 100644 public/categories/golang/index.xml
+ create mode 100644 public/categories/index.html
+ create mode 100644 public/categories/index.xml
+ create mode 100644 public/categories/projects/index.html
+ create mode 100644 public/categories/projects/index.xml
+ create mode 100644 public/categories/r/index.html
+ create mode 100644 public/categories/r/index.xml
+ create mode 100644 public/css/main.css
+ create mode 100644 public/img/profile.png
+ create mode 100644 public/img/sdspic.png
+ create mode 100644 public/index.html
+ create mode 100644 public/index.xml
+ create mode 100644 public/js/docs.min.js
+ create mode 100644 public/js/ie10-viewport-bug-workaround.js
+ create mode 100644 public/js/main.js
+ create mode 100644 public/projects/index.html
+ create mode 100644 public/sitemap.xml
+ create mode 100644 public/tags/development/index.html
+ create mode 100644 public/tags/development/index.xml
+ create mode 100644 public/tags/go/index.html
+ create mode 100644 public/tags/go/index.xml
+ create mode 100644 public/tags/golang/index.html
+ create mode 100644 public/tags/golang/index.xml
+ create mode 100644 public/tags/hugo/index.html
+ create mode 100644 public/tags/hugo/index.xml
+ create mode 100644 public/tags/index.html
+ create mode 100644 public/tags/index.xml
+ create mode 100644 public/tags/plot/index.html
+ create mode 100644 public/tags/plot/index.xml
+ create mode 100644 public/tags/projects/index.html
+ create mode 100644 public/tags/projects/index.xml
+ create mode 100644 public/tags/r-markdown/index.html
+ create mode 100644 public/tags/r-markdown/index.xml
+ create mode 100644 public/tags/regression/index.html
+ create mode 100644 public/tags/regression/index.xml
+ create mode 100644 public/tags/templates/index.html
+ create mode 100644 public/tags/templates/index.xml
+ create mode 100644 public/tags/themes/index.html
+ create mode 100644 public/tags/themes/index.xml
+ create mode 100644 static/.DS_Store
+ create mode 100644 static/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ create mode 100644 static/img/profile.png
+ create mode 100644 static/img/sdspic.png
+ create mode 100644 themes/hugo-sustain/LICENSE.md
+ create mode 100644 themes/hugo-sustain/README.md
+ create mode 100644 themes/hugo-sustain/archetypes/default.md
+ create mode 100644 themes/hugo-sustain/exampleSite/config.toml
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/creating-a-new-theme.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/goisforlovers.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/hugoisforlovers.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/migrate-from-jekyll.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/projects.md
+ create mode 100644 themes/hugo-sustain/exampleSite/data/projects.yml
+ create mode 100644 themes/hugo-sustain/exampleSite/static/img/profile.png
+ create mode 100644 themes/hugo-sustain/images/screenshot.png
+ create mode 100644 themes/hugo-sustain/images/tn.png
+ create mode 100644 themes/hugo-sustain/layouts/404.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/list.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/projects.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/single.html
+ create mode 100644 themes/hugo-sustain/layouts/index.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/disqus.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/footer.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/head.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/header.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/js.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/social.html
+ create mode 100644 themes/hugo-sustain/static/css/main.css
+ create mode 100644 themes/hugo-sustain/static/js/docs.min.js
+ create mode 100644 themes/hugo-sustain/static/js/ie10-viewport-bug-workaround.js
+ create mode 100644 themes/hugo-sustain/static/js/main.js
+ create mode 100644 themes/hugo-sustain/theme.toml
+ create mode 100644 website.Rproj
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$  git config --global user.username YourGit hubUsername[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[Ksg45257 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K7
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git remote add origin https://github.com/Y ourGithubUsername/website.git #[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs g45257/ebsite.[K[K[K[K[K[K[Kwebsite.git
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin master
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': sg45257
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://sg45257@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sg45257/website.git/'
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin master
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': sg45257
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://sg45257@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sg45257/website.git/'
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ 
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin master
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': sg45257
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://sg45257@github.com': 
+Counting objects: 161, done.
+Delta compression using up to 4 threads.
+Compressing objects:   0% (1/140)   Compressing objects:   1% (2/140)   Compressing objects:   2% (3/140)   Compressing objects:   3% (5/140)   Compressing objects:   4% (6/140)   Compressing objects:   5% (7/140)   Compressing objects:   6% (9/140)   Compressing objects:   7% (10/140)   Compressing objects:   8% (12/140)   Compressing objects:   9% (13/140)   Compressing objects:  10% (14/140)   Compressing objects:  11% (16/140)   Compressing objects:  12% (17/140)   Compressing objects:  13% (19/140)   Compressing objects:  14% (20/140)   Compressing objects:  15% (21/140)   Compressing objects:  16% (23/140)   Compressing objects:  17% (24/140)   Compressing objects:  18% (26/140)   Compressing objects:  19% (27/140)   Compressing objects:  20% (28/140)   Compressing objects:  21% (30/140)   Compressing objects:  22% (31/140)   Compressing objects:  23% (33/140)   Compressing objects:  24% (34/140)   Compressing objects:  25% (35/140)   Compressing objects:  26% (37/140)   Compressing objects:  27% (38/140)   Compressing objects:  28% (40/140)   Compressing objects:  29% (41/140)   Compressing objects:  30% (42/140)   Compressing objects:  31% (44/140)   Compressing objects:  32% (45/140)   Compressing objects:  33% (47/140)   Compressing objects:  34% (48/140)   Compressing objects:  35% (49/140)   Compressing objects:  36% (51/140)   Compressing objects:  37% (52/140)   Compressing objects:  38% (54/140)   Compressing objects:  39% (55/140)   Compressing objects:  40% (56/140)   Compressing objects:  41% (58/140)   Compressing objects:  42% (59/140)   Compressing objects:  43% (61/140)   Compressing objects:  44% (62/140)   Compressing objects:  45% (63/140)   Compressing objects:  46% (65/140)   Compressing objects:  47% (66/140)   Compressing objects:  48% (68/140)   Compressing objects:  49% (69/140)   Compressing objects:  50% (70/140)   Compressing objects:  51% (72/140)   Compressing objects:  52% (73/140)   Compressing objects:  53% (75/140)   Compressing objects:  54% (76/140)   Compressing objects:  55% (77/140)   Compressing objects:  56% (79/140)   Compressing objects:  57% (80/140)   Compressing objects:  58% (82/140)   Compressing objects:  59% (83/140)   Compressing objects:  60% (84/140)   Compressing objects:  61% (86/140)   Compressing objects:  62% (87/140)   Compressing objects:  63% (89/140)   Compressing objects:  64% (90/140)   Compressing objects:  65% (91/140)   Compressing objects:  66% (93/140)   Compressing objects:  67% (94/140)   Compressing objects:  68% (96/140)   Compressing objects:  69% (97/140)   Compressing objects:  70% (98/140)   Compressing objects:  71% (100/140)   Compressing objects:  72% (101/140)   Compressing objects:  73% (103/140)   Compressing objects:  74% (104/140)   Compressing objects:  75% (105/140)   Compressing objects:  76% (107/140)   Compressing objects:  77% (108/140)   Compressing objects:  78% (110/140)   Compressing objects:  79% (111/140)   Compressing objects:  80% (112/140)   Compressing objects:  81% (114/140)   Compressing objects:  82% (115/140)   Compressing objects:  83% (117/140)   Compressing objects:  84% (118/140)   Compressing objects:  85% (119/140)   Compressing objects:  86% (121/140)   Compressing objects:  87% (122/140)   Compressing objects:  88% (124/140)   Compressing objects:  89% (125/140)   Compressing objects:  90% (126/140)   Compressing objects:  91% (128/140)   Compressing objects:  92% (129/140)   Compressing objects:  93% (131/140)   Compressing objects:  94% (132/140)   Compressing objects:  95% (133/140)   Compressing objects:  96% (135/140)   Compressing objects:  97% (136/140)   Compressing objects:  98% (138/140)   Compressing objects:  99% (139/140)   Compressing objects: 100% (140/140)   Compressing objects: 100% (140/140), done.
+Writing objects:   0% (1/161)   Writing objects:   1% (2/161)   Writing objects:   2% (4/161)   Writing objects:   3% (5/161)   Writing objects:   4% (7/161)   Writing objects:   5% (9/161)   Writing objects:   6% (10/161)   Writing objects:   7% (12/161)   Writing objects:   8% (13/161)   Writing objects:   9% (15/161)   Writing objects:  10% (17/161)   Writing objects:  11% (18/161)   Writing objects:  12% (20/161)   Writing objects:  13% (21/161)   Writing objects:  14% (23/161)   Writing objects:  15% (25/161)   Writing objects:  16% (26/161)   Writing objects:  17% (28/161)   Writing objects:  18% (29/161)   Writing objects:  19% (31/161)   Writing objects:  20% (33/161)   Writing objects:  21% (34/161)   Writing objects:  22% (36/161)   Writing objects:  24% (39/161)   Writing objects:  25% (41/161)   Writing objects:  26% (42/161)   Writing objects:  27% (44/161)   Writing objects:  28% (46/161)   Writing objects:  29% (47/161)   Writing objects:  30% (49/161)   Writing objects:  31% (50/161)   Writing objects:  32% (52/161)   Writing objects:  33% (54/161)   Writing objects:  34% (55/161)   Writing objects:  35% (57/161)   Writing objects:  36% (58/161)   Writing objects:  37% (60/161)   Writing objects:  38% (62/161)   Writing objects:  39% (63/161)   Writing objects:  40% (65/161)   Writing objects:  41% (67/161)   Writing objects:  42% (68/161)   Writing objects:  43% (70/161)   Writing objects:  44% (71/161)   Writing objects:  45% (73/161)   Writing objects:  47% (76/161)   Writing objects:  48% (78/161)   Writing objects:  49% (79/161)   Writing objects:  50% (81/161)   Writing objects:  51% (83/161)   Writing objects:  52% (84/161)   Writing objects:  53% (86/161)   Writing objects:  53% (86/161), 1.07 MiB | 718.00 KiB/s   Writing objects:  53% (86/161), 1.44 MiB | 708.00 KiB/s   Writing objects:  54% (87/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  55% (89/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  56% (91/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  57% (92/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  58% (94/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  59% (95/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  60% (97/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  61% (99/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  62% (100/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  63% (102/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  64% (104/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  65% (105/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  66% (107/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  67% (108/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  68% (110/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  69% (112/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  70% (113/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  71% (115/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  72% (116/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  73% (118/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  74% (120/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  75% (121/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  76% (123/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  77% (124/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  78% (126/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  79% (128/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  80% (129/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  81% (131/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  82% (133/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  83% (134/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  84% (136/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  85% (137/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  86% (139/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  87% (141/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  88% (142/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  88% (143/161), 1.63 MiB | 600.00 KiB/s   Writing objects:  89% (144/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  90% (145/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  91% (147/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  92% (149/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  93% (150/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  94% (152/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  95% (153/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  96% (155/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  97% (157/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  98% (158/161), 1.94 MiB | 598.00 KiB/s   Writing objects:  99% (160/161), 1.94 MiB | 598.00 KiB/s   Writing objects: 100% (161/161), 1.94 MiB | 598.00 KiB/s   Writing objects: 100% (161/161), 2.02 MiB | 580.00 KiB/s, done.
+Total 161 (delta 42), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/42)[Kremote: Resolving deltas:   2% (1/42)[Kremote: Resolving deltas:   7% (3/42)[Kremote: Resolving deltas:   9% (4/42)[Kremote: Resolving deltas:  11% (5/42)[Kremote: Resolving deltas:  14% (6/42)[Kremote: Resolving deltas:  16% (7/42)[Kremote: Resolving deltas:  45% (19/42)[Kremote: Resolving deltas:  47% (20/42)[Kremote: Resolving deltas:  52% (22/42)[Kremote: Resolving deltas:  54% (23/42)[Kremote: Resolving deltas:  76% (32/42)[Kremote: Resolving deltas:  90% (38/42)[Kremote: Resolving deltas: 100% (42/42)[Kremote: Resolving deltas: 100% (42/42), done.[K
+To https://github.com/sg45257/website.git
+ * [new branch]      master -> master
+s[K git init
+Reinitialized existing Git repository in /Users/shreyagupta/Desktop/website/.git/
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git add .
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git config --global user.username YourGith ubUsername[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Ksg45257
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git remote add origin https://github.com/Y ourGithubUsername/website.git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K/s g45257/website.git
+fatal: remote origin already exists.
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin master
+Everything up-to-date
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ 
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git add . 
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git oush orih[Kgin master
+git: 'oush' is not a git command. See 'git --help'.
+
+The most similar command is
+	push
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push c[Korigin master
+Everything up-to-date
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ cd ~/Desktop/website
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ rm -rf .git*
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git init
+Initialized empty Git repository in /Users/shreyagupta/Desktop/website/.git/
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git add .
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m "you must include a message" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git remote add origin https://github.com/[ [USERNAME]]/[[WEBSITEREPO]].git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksg45257]]/[[webst[Kite]].git
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/[[sg45257]]/[[website]].git'
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m "initial commit"
+[master (root-commit) 7e7946f] initial commit
+ Committer: Shreya Gupta <shreyagupta@Shreyas-MacBook-Pro-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 178 files changed, 7852 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .RData
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/359200C9/console06/8B202346
+ create mode 100644 .Rproj.user/359200C9/console06/8B202346.env
+ create mode 100644 .Rproj.user/359200C9/console06/INDEX001
+ create mode 100644 .Rproj.user/359200C9/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/359200C9/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/359200C9/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/359200C9/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/359200C9/rmd-outputs
+ create mode 100644 .Rproj.user/359200C9/saved_source_markers
+ create mode 100644 .Rproj.user/359200C9/sources/prop/156E6233
+ create mode 100644 .Rproj.user/359200C9/sources/prop/6C8CAD81
+ create mode 100644 .Rproj.user/359200C9/sources/prop/6E78E633
+ create mode 100644 .Rproj.user/359200C9/sources/prop/8282B42A
+ create mode 100644 .Rproj.user/359200C9/sources/prop/8A8F6AF9
+ create mode 100644 .Rproj.user/359200C9/sources/prop/8DDCF637
+ create mode 100644 .Rproj.user/359200C9/sources/prop/8F0357E3
+ create mode 100644 .Rproj.user/359200C9/sources/prop/917B3CB3
+ create mode 100644 .Rproj.user/359200C9/sources/prop/C74FB855
+ create mode 100644 .Rproj.user/359200C9/sources/prop/CB039507
+ create mode 100644 .Rproj.user/359200C9/sources/prop/F250A20D
+ create mode 100644 .Rproj.user/359200C9/sources/prop/INDEX
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/28243DBF
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/28243DBF-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/2C4D7B8A
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/2C4D7B8A-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/4C95A3D0
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/4C95A3D0-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/50D8FC34-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/6F96C3C6
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/6F96C3C6-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/7168DE1D-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/9B105C17
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/9B105C17-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/ACC512FF
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/ACC512FF-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/D55A97A6
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/D55A97A6-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/D878A819
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/D878A819-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/FF9AD42F-contents
+ create mode 100644 .Rproj.user/359200C9/sources/s-DBCEEBB5/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/1A630327-2019-12-15-blog-post/1/359200C9DBCEEBB5/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/1A630327-2019-12-15-blog-post/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/1A630327-2019-12-15-blog-post/1/s/ct37sglxjshn2/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/652044D8-Project2/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 config.toml
+ create mode 100644 content/.DS_Store
+ create mode 100644 content/Project1.Rmd
+ create mode 100644 content/Project1.html
+ create mode 100644 content/Project2.Rmd
+ create mode 100644 content/Project2.html
+ create mode 100644 content/blog/.DS_Store
+ create mode 100644 content/blog/2019-12-15-blog-post.Rmd
+ create mode 100644 content/blog/2019-12-15-blog-post.html
+ create mode 100644 content/projects.md
+ create mode 100644 content/pythonblogpic.png
+ create mode 100644 content/rcode.R
+ create mode 100644 index.Rmd
+ create mode 100644 public/.DS_Store
+ create mode 100644 public/404.html
+ create mode 100644 public/Project1.Rmd
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-7-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-8-2.png
+ create mode 100644 public/Project2.Rmd
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-11-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-24-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-25-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-6-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-9-1.png
+ create mode 100644 public/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 public/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 public/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-7-1.png
+ create mode 100644 public/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 public/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-8-2.png
+ create mode 100644 public/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 public/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 public/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-7-1.png
+ create mode 100644 public/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 public/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-8-2.png
+ create mode 100644 public/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ create mode 100644 public/blog/2019-12-15-blog-post.Rmd
+ create mode 100644 public/blog/2019-12-15-blog-post_files/pythonblogpic.png
+ create mode 100644 public/blog/blog-post/index.html
+ create mode 100644 public/blog/index.html
+ create mode 100644 public/blog/index.xml
+ create mode 100644 public/categories/index.html
+ create mode 100644 public/categories/index.xml
+ create mode 100644 public/categories/projects/index.html
+ create mode 100644 public/categories/projects/index.xml
+ create mode 100644 public/css/main.css
+ create mode 100644 public/img/.DS_Store
+ create mode 100644 public/img/attempt2.jpg
+ create mode 100644 public/img/sdspic.png
+ create mode 100644 public/img/sdspic2.png
+ create mode 100644 public/index.html
+ create mode 100644 public/index.xml
+ create mode 100644 public/js/docs.min.js
+ create mode 100644 public/js/ie10-viewport-bug-workaround.js
+ create mode 100644 public/js/main.js
+ create mode 100644 public/project1/index.html
+ create mode 100644 public/project2/index.html
+ create mode 100644 public/projects/index.html
+ create mode 100644 public/pythonblogpic.png
+ create mode 100644 public/rcode.R
+ create mode 100644 public/sdsresume.pdf
+ create mode 100644 public/sitemap.xml
+ create mode 100644 public/tags/index.html
+ create mode 100644 public/tags/index.xml
+ create mode 100644 public/tags/projects/index.html
+ create mode 100644 public/tags/projects/index.xml
+ create mode 100644 static/.DS_Store
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-7-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-8-2.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-11-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-24-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-25-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-6-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-9-1.png
+ create mode 100644 static/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 static/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 static/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-7-1.png
+ create mode 100644 static/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 static/SDSPROJECT1_files/Project1_files/figure-html/unnamed-chunk-8-2.png
+ create mode 100644 static/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-4-1.png
+ create mode 100644 static/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 static/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-7-1.png
+ create mode 100644 static/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-8-1.png
+ create mode 100644 static/SDSPROJECT1_files/SDSPROJECT1_files/figure-html/unnamed-chunk-8-2.png
+ create mode 100644 static/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ create mode 100644 static/blog/2019-12-15-blog-post_files/pythonblogpic.png
+ create mode 100644 static/img/.DS_Store
+ create mode 100644 static/img/attempt2.jpg
+ create mode 100644 static/img/sdspic.png
+ create mode 100644 static/img/sdspic2.png
+ create mode 100644 static/sdsresume.pdf
+ create mode 100644 themes/hugo-sustain/LICENSE.md
+ create mode 100644 themes/hugo-sustain/README.md
+ create mode 100644 themes/hugo-sustain/archetypes/default.md
+ create mode 100644 themes/hugo-sustain/exampleSite/config.toml
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/creating-a-new-theme.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/goisforlovers.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/hugoisforlovers.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/migrate-from-jekyll.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/projects.md
+ create mode 100644 themes/hugo-sustain/exampleSite/data/projects.yml
+ create mode 100644 themes/hugo-sustain/exampleSite/static/img/profile.png
+ create mode 100644 themes/hugo-sustain/images/screenshot.png
+ create mode 100644 themes/hugo-sustain/images/tn.png
+ create mode 100644 themes/hugo-sustain/layouts/404.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/list.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/projects.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/single.html
+ create mode 100644 themes/hugo-sustain/layouts/index.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/disqus.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/footer.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/head.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/header.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/js.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/social.html
+ create mode 100644 themes/hugo-sustain/static/css/main.css
+ create mode 100644 themes/hugo-sustain/static/js/docs.min.js
+ create mode 100644 themes/hugo-sustain/static/js/ie10-viewport-bug-workaround.js
+ create mode 100644 themes/hugo-sustain/static/js/main.js
+ create mode 100644 themes/hugo-sustain/theme.toml
+ create mode 100644 website.Rproj
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git remote add origin https://github.com/[ [USERNAME]]/[[WEBSITEREPO]].git[1PO]].git[1PO]].git[1PO]].git[1PO]].git[1PO]].git[1PO]].git[1PO]].git[1PO]].git[1PO]].git[1PO]].gitwO]].giteO]].git[C[1P]].gitb]].gits]].giti]].gitt]].gite]].git[1PE]]/[[website]].git[C[C[C[C[C[C[C[1PE]]/[[website]].git[C[C[C[C[C[C[1PE]]/[[website]].git[C[C[C[C[C[1PE]]/[[website]].git[C[C[C[C[1P]]/[[website]].git[C[C[C[1PE]]/[[website]].git[C[C[1PE]]/[[website]].git[C[C[1P]]/[[website]].git[Cs]]/[[website]].git[C[Cg]]/[[website]].git[C[C[C4]]/[[website]].git[C[C[C[C5]]/[[website]].git[C[C[C[C[C2]]/[[website]].git[C[C[C[C[C[C5]]/[[website]].git[C[C[C[C[C[C[C7]]/[[website]].git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+fatal: remote origin already exists.
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin master
+fatal: unable to access 'https://github.com/[[sg45257]]/[[website]].git/': The requested URL returned error: 400
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ ;2D[K[K[Kgit config --global user.name "Mona Lisa"
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git config --global user.email monalisa@ex ample.com
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin master
+fatal: unable to access 'https://github.com/[[sg45257]]/[[website]].git/': The requested URL returned error: 400
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git add .
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m 'pushing updated version'
+[master b00c0dd] pushing updated version
+ 1 file changed, 255 insertions(+)
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin master
+fatal: unable to access 'https://github.com/[[sg45257]]/[[website]].git/': The requested URL returned error: 400
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin mastercommit -m 'pushing updated version'add .[Kpush origin masterconfig --global user.email monalisa@exaample.com[1P.com[1P.com[1P.com[C[C[1P.com[C[1P.com[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.c[1Pom[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.co[1Pm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.com[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.com [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.com
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.com[1P.com[1P.com[1P.com[1P.com[1P.com[1P .com[1P .com[1P .com[1P .com[1P .com[1P .com[1P .com[1P .com[1P .com[1P .coms .comh .com[1P .com[1P .comu .coms .come .comr .com. .come .comm .coma .comi .coml .com[C .com[1P.com[1P .com[1P .com[1P .com[1P .com[1P .comn .coma .comm .come .com[C[C[C[C[C[K[K[K[K"sg4424[K[K[K5257'[K"
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git config --global user.email ""s"h"r"g"u"p"d"[1P"t"a"0" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2""@"g"m"a"i"l"."c"o"m"
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git add  .[K[K.
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m "updated websa[Kites"
+[master 5509034] updated websites
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push oriig[K[Kgin master
+fatal: unable to access 'https://github.com/[[sg45257]]/[[website]].git/': The requested URL returned error: 400
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git ass .[K[K[K[Kdd . -A
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m "updated u[Kwebsite"
+[master 6459190] updated website
+ 1 file changed, 6 insertions(+)
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ gut [K[K[Kit push origin master
+fatal: unable to access 'https://github.com/[[sg45257]]/[[website]].git/': The requested URL returned error: 400
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ gt[Kit status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/359200C9/console06/8B202346[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ cd..
+bash: cd..: command not found
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ ld[Ks
+config.toml	index.Rmd	static		website.Rproj
+content		public		themes
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git add . -A
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   .Rproj.user/359200C9/console06/8B202346[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/359200C9/console06/8B202346[m
+
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git ass [K[K[Kdd ''.'R'p'r'o'j'.'u's'e'r'/'3'5'9'2'0'0'C'9'/'c'o'n's'o'l'e'0'6'/'8' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CB''2'0'2'3'4'6'
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   .Rproj.user/359200C9/console06/8B202346[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/359200C9/console06/8B202346[m
+
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git commit -m "ud[Kpdated website"
+[master 32b9389] updated website
+ 1 file changed, 34 insertions(+)
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ gut [K[Kit [K[K[K[Kit push --set-upstream origin master[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kit pusb[Kh origin master
+fatal: unable to access 'https://github.com/[[sg45257]]/[[website]].git/': The requested URL returned error: 400
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+]0;~/Desktop/websiteShreyas-MacBook-Pro-2:website shreyagupta$ 
